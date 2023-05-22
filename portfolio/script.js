@@ -19,11 +19,70 @@ function escrevendoLetra(){
 escrevendoLetra();
 
 //MENU
-const ativaMenu = document.querySelector('.fa-bars');
-const navMenu = document.querySelector('header .navegacao-primaria');
+function menuMobile(){
+  const ativaMenu = document.querySelector('.fa-bars');
+  const navMenu = document.querySelector('header .navegacao-primaria');
 
-ativaMenu.addEventListener('click', () => {
-  ativaMenu.classList.toggle('fa-x');
-  navMenu.classList.toggle('ativado');
-})
+  ativaMenu.addEventListener('click', () => {
+    ativaMenu.classList.toggle('fa-x');
+    navMenu.classList.toggle('ativado');
+  });
+}
 
+menuMobile();
+
+// RESUME
+function sobreMim(){
+
+  const divExperience = document.querySelectorAll('.experience_content div');
+  const liExperience = document.querySelectorAll('.experience_content ul li');
+
+  const divEducation = document.querySelectorAll('.education_content div');
+  const liEducation = document.querySelectorAll('.education_content ul li');
+
+  ***TENTAR FAZER O SLIDE COM TIMEOUT***
+
+  divExperience[0].classList.add('ativo');
+  liExperience[0].classList.add('ativo');
+  divEducation[0].classList.add('ativo');
+  liEducation[0].classList.add('ativo');
+
+  function slideShow( index ){
+    divExperience.forEach((div) => {
+      div.classList.remove('ativo');
+    });
+    liExperience.forEach((botao) => {
+      botao.classList.remove('ativo');
+    });
+
+    divExperience[index].classList.add('ativo');
+    liExperience[index].classList.add('ativo');
+  }
+
+  function slideShow2( index ){
+    divEducation.forEach((div) => {
+      div.classList.remove('ativo');
+    });
+    liEducation.forEach((botao) => {
+      botao.classList.remove('ativo');
+    });
+
+    divEducation[index].classList.add('ativo');
+    liEducation[index].classList.add('ativo');
+  }
+
+  liExperience.forEach((event, index) => {
+    event.addEventListener('click', () => {
+      slideShow(index)
+    });
+  });
+
+  liEducation.forEach((event, index) => {
+    event.addEventListener('click', () => {
+      slideShow2(index)
+    });
+  });
+
+}
+
+sobreMim();
