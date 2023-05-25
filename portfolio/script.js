@@ -40,8 +40,6 @@ function sobreMim(){
   const divEducation = document.querySelectorAll('.education_content div');
   const liEducation = document.querySelectorAll('.education_content ul li');
 
-  ***TENTAR FAZER O SLIDE COM TIMEOUT***
-
   divExperience[0].classList.add('ativo');
   liExperience[0].classList.add('ativo');
   divEducation[0].classList.add('ativo');
@@ -86,3 +84,79 @@ function sobreMim(){
 }
 
 sobreMim();
+
+// PROJECTS
+const listAll = document.querySelectorAll('.projects_storage ul li');
+const buttomGeral = document.querySelectorAll('.projects_models ul li');
+const buttomAll = document.querySelectorAll('.projects_models .all');
+
+listAll.forEach((img) => {
+  img.classList.add('active');
+})
+
+listAll[0].classList.add('active');
+
+function removeClick( index ){
+  buttomGeral.forEach((item) => {
+    item.classList.remove('.active');
+  });
+  buttomGeral[index].classList.add('.active');
+}
+
+buttomGeral.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    removeClick(index);
+  });
+});
+
+function showList(list, buttom = "all"){
+  list.forEach((item) => {
+    item.classList.remove('active');
+  });
+  if(buttom == 'design'){
+    list[0].classList.add('active');    
+    list[1].classList.add('active');
+  }
+  if(buttom == 'graphic'){
+    list[2].classList.add('active');
+    list[3].classList.add('active');
+  }
+  if(buttom == 'webSite'){
+    list[4].classList.add('active');
+    list[5].classList.add('active');
+    list[6].classList.add('active');
+    list[7].classList.add('active');
+  }
+  if(buttom == 'all'){
+    list[0].classList.add('active');
+    list[1].classList.add('active');
+    list[2].classList.add('active');
+    list[3].classList.add('active');
+    list[4].classList.add('active');
+    list[5].classList.add('active');
+    list[6].classList.add('active');
+    list[7].classList.add('active');
+  }
+}
+
+buttomGeral.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    let currentButtom = e.target;
+
+    if(currentButtom.classList.contains('all')){
+      showList(listAll);
+    }
+    if(currentButtom.classList.contains('design')){
+      showList(listAll, "design")
+    }
+    if(currentButtom.classList.contains('graphic')){
+      showList(listAll, "graphic")
+    }
+    if(currentButtom.classList.contains('webSite')){
+      showList(listAll, "webSite")
+    }
+    if(currentButtom.classList.contains('all')){
+      showList(listAll, "all")
+    }
+  })
+})
