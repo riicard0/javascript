@@ -689,6 +689,57 @@ main .sobre {
   font-family: 'Poppins';
 }
 
+@media(max-width: 1089px) {
+
+  /* RESUME - EXPERIENCE/EDUCATION */
+  .resume_generico .experience_content,
+  .education_content {
+    justify-self: center;
+    grid-column: 1/-1;
+  }
+
+  .resume_generico .education {
+    grid-column: 1/-1;
+    grid-row: 3;
+    justify-self: center;
+    margin: 30px 0;
+  }
+
+  .resume_generico .experience {
+    grid-column: 1/-1;
+    grid-row: 1;
+    justify-self: center;
+  }
+
+  /* RESUME - COURSES/FUN FACTS */
+  .cursos {
+    grid-template-columns: 1fr;
+  }
+
+  .cursos .funfacts h2 {
+    justify-self: center;
+  }
+
+  .cursos .funfacts {
+    margin-bottom: 30px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    grid-column: 1/-1;
+  }
+
+  .cursos .my_skill h2 {
+    justify-self: center;
+  }
+
+  .cursos .my_skill {
+    text-align: center;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    grid-column: 1/-1;
+  }
+}
+
 /* PROJECTS */
 .projects {
   padding: 30px;
@@ -750,13 +801,14 @@ main .sobre {
   height: 100%;
   border-radius: 4px;
   transition: .3s ease-in;
+  border: 1px solid transparent;
 }
 
 .projects_storage ul li img:hover {
   border: 1px solid #fff;
 }
 
-#link {
+.load_more {
   background-color: #222;
   text-decoration: none;
   justify-self: center;
@@ -767,7 +819,7 @@ main .sobre {
   transition: .3s ease-in;
 }
 
-#link:hover {
+.load_more:hover {
   color: #fff;
   border: 1px solid #fff;
 }
@@ -784,4 +836,62 @@ main .sobre {
   }
 }
 
-/* RESPONSIVITY */
+@media(max-width: 1089px) {
+  .projects_storage ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* FOOTER */
+footer {
+  background-color: #000;
+  padding: 30px;
+}
+
+footer .sobre_titulo p {
+  margin: 30px;
+}
+
+.footer_sociais {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #f7f7f7;
+}
+
+.footer_sociais li {
+  background-color: #212020;
+  border-radius: 50%;
+  border: 1px solid #333;
+}
+
+.footer_sociais li i {
+  padding: 30px;
+  color: #f7f7f7;
+}
+
+.footer_sociais li:hover {
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  background-color: #3e3d3d;
+}
+
+.footer_sociais::before {
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 5px;
+  bottom: -40px;
+  background-color: #222;
+}
+
+footer .footer_comercial {
+  text-align: center;
+  color: #fff;
+  margin: 90px auto;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
