@@ -25,12 +25,6 @@ Up Portfolio-Website: www.martinsr.dev/
 
   `Javascript ES6+`
 
-  `Vue.js 3`
-
-  `Vuex`
-
-  `Vue Router`
-
   - Platforms:
 
   `Github`
@@ -57,9 +51,6 @@ Up Portfolio-Website: www.martinsr.dev/
 
   - Develop in Operating System: *Windows* only :(
 
-  - Used Fonts:
-    `...`
-
 ## Tasks
 
 1. **PRIMEIROS PASSOS:**
@@ -70,10 +61,7 @@ Up Portfolio-Website: www.martinsr.dev/
   - Design
   - Anotações
   - Criar primeiramente com 'HTML5, CSS3 e Javascript' puro
-  - Convert to Vue.js
-  - Vue Scripts with "Composition API"
-  - Styling Vue components with "Scoped CSS"
-  - Develop: Local Web Server Vue.js (npm)
+  - Develop: Local Web Server
   - Up to Github from Git
   
 2. **ESTRUTURA DO SITE:**
@@ -113,23 +101,3 @@ Up Portfolio-Website: www.martinsr.dev/
   - Deploy
   - Post: >LinkedIn
   - Update with images README.md (GitHub)
-
-  ## Next Version 2.0:
-
-  - Repository's Name: *martinsr-vite*
-  
-  `HTML5`
-
-  `CSS3`
-
-  `Javascript ES6+`
-
-  `Vue.js 3`
-
-  `VUEX`
-
-  `Vue Router`
-
-  `Vite`
-
-  `SASS`
