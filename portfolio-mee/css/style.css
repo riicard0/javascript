@@ -177,7 +177,7 @@ body {
   header .navegacao-primaria.ativado {
     background: linear-gradient(var(--color-gradient-1a), var(--color-gradient-1b));
     position: absolute;
-    display: grid;
+    display: grid !important;
     top: 80px;
     color: var(--color-2);
     z-index: 1;
@@ -915,4 +915,30 @@ footer .footer_comercial {
   margin: 90px auto;
   font-size: 1.5rem;
   font-family: var(--font-5);
+}
+
+/* BACK HOME */
+#link-topo {
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-3);
+  background: -webkit-linear-gradient(to right, var(--color-gradient-1a), var(--color-gradient-1b));
+  background: linear-gradient(to left, var(--color-gradient-1a), var(--color-gradient-1b));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0.1rem 0.6rem #000000;
+  transition: .4s ease-in;
+}
+
+#link-topo:hover {
+  background: var(--color-4);
+  background: -webkit-linear-gradient(to right, var(--color-4), var(--color-3));
+  background: linear-gradient(to left, var(--color-4), var(--color-3));
+  color: #000;
 }
