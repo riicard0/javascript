@@ -18,18 +18,11 @@ function escrevendoLetra(){
 
 escrevendoLetra();
 
-//MENU
-function menuMobile(){
-  const ativaMenu = document.querySelector('.fa-bars');
-  const navMenu = document.querySelector('header .navegacao-primaria');
+/* HAMBURGUER MENU LATERAL */
 
-  ativaMenu.addEventListener('click', () => {
-    ativaMenu.classList.toggle('fa-x');
-    navMenu.classList.toggle('ativado');
-  });
-}
-
-menuMobile();
+document.querySelector(".hamburguer").addEventListener("click", () =>
+    document.querySelector(".container").classList.toggle("show-menu")
+)
 
 // RESUME
 function sobreMim(){

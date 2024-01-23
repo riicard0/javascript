@@ -30,20 +30,22 @@
 
 </head>
 
-<body>
-	<div class="anotacoes" style="color: red">
+<body class="container">
+	<div class="anotacoes" style="color: #ff0000">
 		ANOTAÇÕES:
 		<br />
 		<br />
 		- Finish Playlist: "João Carlos Lima e Silva" sobre o portfólio: <a target="_blank"
-			href="https://youtu.be/2mW5cVIJIsI?si=HJYz4OLoWtmdHeo_&t=1607">"Website
-			completo com HTML, CSS e JS #02: Header"</a> <br />
+			href="https://youtu.be/ECV5u9IvjZM?si=67NT4gSOI3Dc_Umq">"Website completo com HTML, CSS e JS #05: Seção Projetos
+			com Cards"</a> <br />
 		- Fazer "hover" nos Cards em "Portfolio" com informações <br />
+		<br />
+
 		- Arrumar "slide" em "Professional" com timing automático <br />
-		- Arrumar menu mobile (não está funcionando) <br />
-		- Talvez trocar menu mobile lateral. <br />
 		- Compactar imagens para maior velocidade do site. <br />
-		<br /> <br />
+		- Arrumar "escrevendoLetra" para remover e escrever outra frase, elas ficando em loop <br />
+		- Barra de rolagem da página personalizada
+		<br />
 		- YouTube: ver vídeos separados "Watch Later" <br />
 		- Logo: Pegar logo PNG (Milton Quântico) e alterar FavIcon <br />
 		- Preload: Criar Pre-Load com a logo <br />
@@ -54,26 +56,53 @@
 		- English: Verificar se inglês da página está bom <br />
 		-
 		<br /> <br />
-		- Terminar site até 23.01.2024 <br />
-		- Deploy até 26.01.2024 <br />
-		- LinkedIn Post até 27.01.2024 <br />
-		- Apagar div "anotacoes" e style no HTML antes de fazer deploy
+		- Terminar site até 26.01.2024 <br />
+		- Deploy até 04.01.2024 <br />
+		- LinkedIn Post até 05.01.2024 <br />
+		- Apagar essa div "anotacoes" e style no HTML ".anotecoes" antes de fazer deploy
 		<br /> ----------------------------------------------------------------------------
 	</div>
 
 	<!-- MENU -->
 	<header id="hero" class="site-website">
 		<h1>Ricardo <span>Martins</span></h1>
+
 		<nav>
 			<ul aria-label="navegação primária" class="navegacao-primaria">
-				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#professional">Experience</a></li>
 			</ul>
-			<i class="fa-solid fa-bars"></i>
 		</nav>
+
+		<!-- HAMBURGUER MENU LATERAL -->
+		<div class="hamburguer">
+			<div class="line" id="line1"></div>
+			<div class="line" id="line2"></div>
+			<div class="line" id="line3"></div>
+			<div class="line" id="line4"></div>
+			<span>Fechar</span>
+		</div>
+
+		<aside class="sidebar">
+			<nav>
+				<ul class="menu">
+					<li class="menu-item"><a class="menu-link" href="#hero">Home</a></li>
+					<li class="menu-item"><a class="menu-link" href="#about">About</a></li>
+					<li class="menu-item"><a class="menu-link" href="#services">Services</a></li>
+					<li class="menu-item"><a class="menu-link" href="#portfolio">Portfolio</a></li>
+					<li class="menu-item"><a class="menu-link" href="#professional">Experience</a></li>
+				</ul>
+			</nav>
+
+			<div class="social-media">
+				<a href="https://www.linkedin.com/in/riicard0/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+				<a href="https://github.com/riicard0" target="_blank"><i class="fab fa-github-alt"></i></a>
+				<a href="https://www.instagram.com/ricarrdo_marttyns/" target="_blank"><i
+						class="fa-brands fa-instagram"></i></a>
+			</div>
+		</aside>
 	</header>
 
 	<!-- HOME | HERO -->
