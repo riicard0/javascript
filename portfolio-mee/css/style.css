@@ -119,10 +119,22 @@ body {
   }
 }
 
-@keyframes ladoSecao {
+/* PROFESSIONAL - XP/ED */
+@keyframes ladoSecaoXP {
   from {
     transition: .5s;
     transform: translate3d(-60px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes ladoSecaoED {
+  from {
+    transition: .5s;
+    transform: translate3d(60px, 0, 0);
   }
 
   to {
@@ -448,6 +460,17 @@ header .navegacao-primaria li a:hover::after {
 
   .projects::after {
     margin: 2% auto -5rem auto !important;
+  }
+
+  /* experience - education */
+  .resume_generico .experience_content div {
+    width: 50rem !important;
+    height: 13rem !important;
+  }
+
+  .resume_generico .education_content div {
+    width: 50rem !important;
+    height: 16rem !important;
   }
 }
 
@@ -864,7 +887,7 @@ main .sobre::after {
   margin-right: 10px;
 }
 
-/* RESUME - EXPERIENCE */
+/* PROFESSIONAL - EXPERIENCE */
 .experience {
   margin-bottom: 30px;
   grid-column: 1;
@@ -887,8 +910,9 @@ main .sobre::after {
 }
 
 .resume_generico .experience_content div {
+  height: 18rem;
   background-color: var(--color-9);
-  animation: ladoSecao .5s ease-in-out forwards;
+  animation: ladoSecaoXP .5s ease-in-out forwards;
   display: none;
   padding: 40px;
   position: relative;
@@ -933,12 +957,13 @@ main .sobre::after {
   color: var(--color-3);
 }
 
-/* RESUME - EDUCATION */
+/* PROFESSIONAL - EDUCATION */
 .resume_generico .education_content div {
+  height: 18rem;
   background-color: var(--color-9);
   padding: 40px;
   display: none;
-  animation: ladoSecao .5s ease-in-out forwards;
+  animation: ladoSecaoED .5s ease-in-out forwards;
   position: relative;
   border-radius: 5px 40px 40px 40px;
 }
