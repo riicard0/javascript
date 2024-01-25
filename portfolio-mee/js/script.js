@@ -112,9 +112,9 @@ function showList(list, buttom = "all"){
   }
   if(buttom == 'app_project'){
     list[2].classList.add('active');
-    list[3].classList.add('active');
   }
   if(buttom == 'webSite'){
+    list[3].classList.add('active');
     list[4].classList.add('active');
     list[5].classList.add('active');
     list[6].classList.add('active');
