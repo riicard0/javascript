@@ -1038,8 +1038,83 @@ main .sobre::after {
   color: var(--color-3);
 }
 
+/* slide */
+.slider {
+  width: 50rem;
+  height: 100vh;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.slides_xp {
+  width: 400%;
+  height: 13rem;
+  display: flex;
+}
+
+.slides_xp input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#xp1:checked~.first {
+  margin-left: 0;
+}
+
+#xp2:checked~.first {
+  margin-left: -25%;
+}
+
+#xp3:checked~.first {
+  margin-left: -50%;
+}
+
+#xp4:checked~.first {
+  margin-left: -75%;
+}
+
+#xp5:checked~.first {
+  margin-left: -100%;
+}
+
+/* fim slide */
+
 /* PROFESSIONAL - EDUCATION */
-.resume_generico .education_content div {
+/* .resume_generico .education_content div {
   height: 14rem;
   background-color: var(--color-9);
   padding: 40px;
@@ -1098,7 +1173,7 @@ main .sobre::after {
 
 .resume_generico .education_content div.ativo {
   display: block;
-}
+} */
 
 /* FOOTER */
 footer {

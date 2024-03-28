@@ -24,60 +24,6 @@ document.querySelector(".hamburguer").addEventListener("click", () =>
     document.querySelector(".container").classList.toggle("show-menu")
 )
 
-// RESUME
-function sobreMim(){
-
-  const divExperience = document.querySelectorAll('.experience_content div');
-  const liExperience = document.querySelectorAll('.experience_content ul li');
-
-  const divEducation = document.querySelectorAll('.education_content div');
-  const liEducation = document.querySelectorAll('.education_content ul li');
-
-  divExperience[0].classList.add('ativo');
-  liExperience[0].classList.add('ativo');
-  divEducation[0].classList.add('ativo');
-  liEducation[0].classList.add('ativo');
-
-  function slideShow( index ){
-    divExperience.forEach((div) => {
-      div.classList.remove('ativo');
-    });
-    liExperience.forEach((botao) => {
-      botao.classList.remove('ativo');
-    });
-
-    divExperience[index].classList.add('ativo');
-    liExperience[index].classList.add('ativo');
-  }
-
-  function slideShow2( index ){
-    divEducation.forEach((div) => {
-      div.classList.remove('ativo');
-    });
-    liEducation.forEach((botao) => {
-      botao.classList.remove('ativo');
-    });
-
-    divEducation[index].classList.add('ativo');
-    liEducation[index].classList.add('ativo');
-  }
-
-  liExperience.forEach((event, index) => {
-    event.addEventListener('click', () => {
-      slideShow(index)
-    });
-  });
-
-  liEducation.forEach((event, index) => {
-    event.addEventListener('click', () => {
-      slideShow2(index)
-    });
-  });
-
-}
-
-sobreMim();
-
 // PROJECTS
 const listAll = document.querySelectorAll('.projects_storage ul li');
 const buttomGeral = document.querySelectorAll('.projects_models ul li');
@@ -153,3 +99,60 @@ buttomGeral.forEach((item) => {
     }
   })
 })
+
+// PROFESSIONAL
+//experience
+function sobreMim(){
+
+  const divExperience = document.querySelectorAll('.experience_content div');
+  const liExperience = document.querySelectorAll('.experience_content ul li');
+
+  const divEducation = document.querySelectorAll('.education_content div');
+  const liEducation = document.querySelectorAll('.education_content ul li');
+
+  divExperience[0].classList.add('ativo');
+  liExperience[0].classList.add('ativo');
+  divEducation[0].classList.add('ativo');
+  liEducation[0].classList.add('ativo');
+
+  function slideShow( index ){
+    divExperience.forEach((div) => {
+      div.classList.remove('ativo');
+    });
+    liExperience.forEach((botao) => {
+      botao.classList.remove('ativo');
+    });
+
+    divExperience[index].classList.add('ativo');
+    liExperience[index].classList.add('ativo');
+  }
+
+  //education
+
+  function slideShow2( index ){
+    divEducation.forEach((div) => {
+      div.classList.remove('ativo');
+    });
+    liEducation.forEach((botao) => {
+      botao.classList.remove('ativo');
+    });
+
+    divEducation[index].classList.add('ativo');
+    liEducation[index].classList.add('ativo');
+  }
+
+  liEducation.forEach((event, index) => {
+    event.addEventListener('click', () => {
+      slideShow2(index)
+    });
+  });
+
+  liEducation.forEach((event, index) => {
+    event.addEventListener('click', () => {
+      slideShow2(index)
+    });
+  });
+
+}
+
+sobreMim();
