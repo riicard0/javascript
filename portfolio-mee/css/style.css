@@ -765,7 +765,7 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 4% auto -10rem auto;
+  margin: 2% auto -10rem auto;
 }
 
 .projects ul {
@@ -930,10 +930,11 @@ main .sobre::after {
   border: 1px solid var(--color-2);
 }
 
-/* RESUME */
+/* PROFESSIONAL */
 .my_resume {
   color: var(--color-4);
   padding: 40px;
+  height: 100vh;
 }
 
 .my_resume::after {
@@ -943,140 +944,101 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 1% auto -1rem auto;
+  margin: 4% auto -1rem auto;
 }
 
-.resume_generico {
-  padding: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  gap: 10px;
-  align-items: start;
+/* experience */
+.slider {
+  width: 50rem;
+  height: 20rem;
+  overflow: hidden;
+  margin: 2rem auto;
 }
 
-.resume_generico h2 {
-  font-family: 'Poppins';
+.slider .professional_icons {
+  width: 15rem;
+  margin-left: .1rem;
+  padding: .7rem;
+  border-radius: .5rem;
+  font-family: var(--font-1);
   font-size: 1.5rem;
-  background-color: var(--color-3);
-  justify-self: start;
-  padding: 10px;
-  border-radius: 3px;
+  background-color: var(--color-4);
+  color: var(--color-1);
 }
 
-.resume_generico h2 i {
-  margin-right: 10px;
+.slider .professional_icons i {
+  margin: 0 1rem 0 1rem;
 }
 
-/* PROFESSIONAL - EXPERIENCE */
-.experience {
-  margin-bottom: 30px;
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.education {
-  margin-bottom: 30px;
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.experience_content ul {
-  color: var(--color-5);
-  gap: 10px;
+.slides_xp,
+.slides_ed {
+  width: 500%;
+  height: 13rem;
   display: flex;
-  cursor: pointer;
-  margin-top: 20px;
-  justify-content: center;
 }
 
-.resume_generico .experience_content div {
-  height: 18rem;
-  background-color: var(--color-9);
-  animation: ladoSecaoXP .5s ease-in-out forwards;
+.slides_xp input,
+.slides_ed input {
   display: none;
-  padding: 40px;
+}
+
+.slide {
+  width: 20%;
   position: relative;
+  transition: 2s;
+  margin-top: 2rem;
+}
+
+.slide div {
   border-radius: 5px 40px 40px 40px;
+  margin-right: .5rem;
 }
 
-.resume_generico .experience_content div.ativo {
-  display: block;
-}
-
-.resume_generico .experience_content div::before {
+.slide div::before {
   content: '';
   border-right: 30px solid transparent;
-  border-bottom: 30px solid var(--color-9);
+  border-bottom: 30px solid #222;
   position: absolute;
   top: -20px;
   left: 30px;
   display: inline-block;
 }
 
-.resume_generico .experience_content div span {
+.slide_info {
+  background-color: #222;
+  height: 13rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.slide_info span {
   color: var(--color-5);
   font-family: var(--font-1);
   font-weight: bold;
+  font-size: .8rem;
 }
 
-.resume_generico .experience_content div h3 {
+.slide_info h3 {
   font-family: var(--font-1);
-  margin: 10px 0;
+  color: var(--color-2);
+  margin: .3rem 0;
 }
 
-.resume_generico .experience_content div p {
+.slide_info p {
   color: var(--color-3);
   font-size: 1.1rem;
-}
-
-.experience_content ul li.ativo {
-  color: var(--color-9);
-}
-
-.experience_content ul li:hover {
-  color: var(--color-3);
-}
-
-/* slide */
-.slider {
-  width: 50rem;
-  height: 100vh;
-  overflow: hidden;
-  margin: auto;
-  margin-top: 5rem;
-}
-
-.slides_xp {
-  width: 400%;
-  height: 13rem;
-  display: flex;
-}
-
-.slides_xp input {
-  display: none;
-}
-
-.slide {
-  width: 25%;
-  position: relative;
-  transition: 2s;
-}
-
-.slide img {
-  width: 800px;
 }
 
 .manual-navigation {
   position: absolute;
   width: 800px;
-  margin-top: -40px;
+  margin-top: 3.5rem;
   display: flex;
   justify-content: center;
 }
 
 .manual-btn {
-  border: 2px solid #fff;
+  border: 2px solid var(--color-2);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -1088,92 +1050,36 @@ main .sobre::after {
 }
 
 .manual-btn:hover {
-  background-color: #fff;
+  background-color: var(--color-2);
 }
 
-#xp1:checked~.first {
+#xp1:checked~.first,
+#ed1:checked~.first {
   margin-left: 0;
 }
 
-#xp2:checked~.first {
-  margin-left: -25%;
+#xp2:checked~.first,
+#ed2:checked~.first {
+  margin-left: -20%;
 }
 
-#xp3:checked~.first {
-  margin-left: -50%;
+#xp3:checked~.first,
+#ed3:checked~.first {
+  margin-left: -40%;
 }
 
-#xp4:checked~.first {
-  margin-left: -75%;
+#xp4:checked~.first,
+#ed4:checked~.first {
+  margin-left: -60%;
 }
 
-#xp5:checked~.first {
-  margin-left: -100%;
+#xp5:checked~.first,
+#ed5:checked~.first {
+  margin-left: -80%;
 }
 
-/* fim slide */
+/* education */
 
-/* PROFESSIONAL - EDUCATION */
-/* .resume_generico .education_content div {
-  height: 14rem;
-  background-color: var(--color-9);
-  padding: 40px;
-  display: none;
-  animation: ladoSecaoED .5s ease-in-out forwards;
-  position: relative;
-  border-radius: 5px 40px 40px 40px;
-}
-
-.resume_generico .education_content div:nth-child(2) {
-  height: 18rem;
-}
-
-.education_content ul {
-  color: var(--color-5);
-  gap: 10px;
-  display: flex;
-  cursor: pointer;
-  margin-top: 20px;
-  justify-content: center;
-}
-
-.resume_generico .education_content div::before {
-  content: '';
-  border-right: 30px solid transparent;
-  border-bottom: 30px solid var(--color-9);
-  position: absolute;
-  top: -20px;
-  left: 30px;
-  display: inline-block;
-}
-
-.resume_generico .education_content div span {
-  color: var(--color-5);
-  font-family: var(--font-1);
-  font-weight: bold;
-}
-
-.resume_generico .education_content div h3 {
-  font-family: var(--font-1);
-  margin: 10px 0;
-}
-
-.resume_generico .education_content div p {
-  color: var(--color-3);
-  font-size: 1.1rem;
-}
-
-.education_content ul li.ativo {
-  color: var(--color-9);
-}
-
-.education_content ul li:hover {
-  color: var(--color-3);
-}
-
-.resume_generico .education_content div.ativo {
-  display: block;
-} */
 
 /* FOOTER */
 footer {
