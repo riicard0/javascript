@@ -100,3 +100,25 @@ buttomGeral.forEach((item) => {
   })
 })
 
+// Professional
+
+let count = 1;
+document.getElementById("xp1").checked = true;
+document.getElementById("ed1").checked = true;
+
+setInterval( function(){
+  nextText();
+}, 3000);
+
+function nextText(){
+  count++;
+  if( count > 10 ){
+    count = 1;
+  }
+
+  if( count <= 5 ){
+    document.getElementById("xp"+count).checked = true;
+  } else if( count > 5 && count <= 10 ){
+    document.getElementById("ed"+(count-5)).checked = true;
+  }
+}

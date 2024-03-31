@@ -565,7 +565,7 @@ main .sobre::after {
   border-radius: 5px;
   grid-column: 1/-1;
   grid-row: 6;
-  margin: 0 auto;
+  margin: 7.5% auto;
 }
 
 .sobre img {
@@ -667,7 +667,7 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 1% auto -5rem auto;
+  margin: 5.5% auto;
 }
 
 .my_services ul {
@@ -765,7 +765,7 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 2% auto -10rem auto;
+  margin: 10% auto;
 }
 
 .projects ul {
@@ -944,7 +944,7 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 4% auto -1rem auto;
+  margin: 13% auto;
 }
 
 /* experience */
@@ -1043,6 +1043,10 @@ main .sobre::after {
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
+}
+
+.manual-btn:checked {
+  background-color: var(--color-5);
 }
 
 .manual-btn:not(:last-child) {
