@@ -19,6 +19,10 @@
 	<link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
 
 	<style>
+		.anotacoes {
+			color: #ff0000;
+		}
+
 		.anotacoes a {
 			color: #5fbaf7;
 		}
@@ -26,40 +30,50 @@
 		.anotacoes a:hover {
 			color: #fff;
 		}
+
+		.anotacoes p {
+			color: #fff;
+		}
 	</style>
 
 </head>
 
 <body class="container">
-	<div class="anotacoes" style="color: #ff0000">
+	<div class="anotacoes">
 		ANOTAÇÕES:
 		<br />
 		<br />
 
-		- Arrumar "slide" em "Professional" com timing automático <br />
-		- Compactar imagens para maior velocidade do site. <br />
+		<p>- Arrumar "Lista de Conhecimentos" em "services".</p> <br />
+		- Responsiveness: Terminar responsividade em todas as dimensões <br />
 		- Arrumar "escrevendoLetra" para remover e escrever outra frase, elas ficando em loop <br />
-		- Barra de rolagem da página personalizada
-		<br />
-		- YouTube: ver vídeos separados "Watch Later" <br />
+		<!-- 1st phrase: "Ricardo Martins", 2nd phrase: "25 years old and...", 3rd phrase: "Front-End Developer ▪︎ Vue.js | Javascript" -->
+		- Barra de rolagem da página personalizada<br />
 		- Logo: Pegar logo PNG (Milton Quântico) e alterar FavIcon <br />
 		- Preload: Criar Pre-Load com a logo <br />
-		- Responsiveness: Terminar responsividade em todas as dimensões <br />
+		- English: Verificar se inglês da página está bom <br />
+		- Ponderar se um site em inglês e português seria uma boa. <br />
+		- Arrumar "Header" colocando junto com "Hero" <br />
+		- Arrumar "Professional" com evento de "click" sobre as bolinhas, pois está com bug <br />
+		- Compactar imagens para maior velocidade do site. <br />
 		- SEO: Ver vídeos falando de html semântico e SEO website <br />
 		- Security: Ver vídeos no quesito segurança para site no YouTube <br />
 		- PageSpeed Insights: Velocidade do site <br />
-		- English: Verificar se inglês da página está bom <br />
-		-
-		<br /> <br />
-		- Terminar site até 26.01.2024 <br />
-		- Deploy até 04.01.2024 <br />
-		- LinkedIn Post até 05.01.2024 <br />
+		- Adaptar CSS (ver vídeos) para outros/principais navegadores <br />
+		<p>- Lista de afazeres: <a href="https://trello.com/b/vp1hXCii/martinsr" target="_blank">Trello</a> ou <a
+				href="https://github.com/riicard0/javascript/tree/master/portfolio-mee" target="_blank">Github</a></p>
+		<br />
+		<p>- YouTube: ver vídeos separados "<a href="https://www.youtube.com/playlist?list=WL" target="_blank">Watch
+				Later</a>"</p> <br />
+		- Terminar site até 15.04.2024 <br />
+		- Deploy até 20.04.2024 <br />
+		- LinkedIn Post até 25.05.2024 <br />
 		- Apagar essa div "anotacoes" e style no HTML ".anotacoes" antes de fazer deploy
 		<br /> ----------------------------------------------------------------------------
 	</div>
 
 	<!-- MENU -->
-	<header id="hero" class="site-website">
+	<header id="home" class="site-website">
 		<h1>Ricardo <span>Martins</span></h1>
 
 		<nav>
@@ -101,7 +115,7 @@
 	</header>
 
 	<!-- HOME | HERO -->
-	<section id="home" aria-label="seção home" class="section-div site-website">
+	<section id="hero" aria-label="seção home" class="section-div site-website">
 		<div>
 			<h2>Hi everyone. I'm</h2>
 			<h2 class="digitando">Front-End Developer ▪︎ Vue.js | Javascript</h2>
@@ -376,6 +390,15 @@
 				</div>
 				<!-- Fim Slide -->
 
+				<!-- Navigation Auto -->
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					<div class="auto-btn5"></div>
+				</div>
+
 			</div>
 
 			<div class="manual-navigation">
@@ -457,6 +480,15 @@
 				</div>
 				<!-- Fim Slide -->
 
+				<!-- Navigation Auto -->
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					<div class="auto-btn5"></div>
+				</div>
+
 			</div>
 
 			<div class="manual-navigation">
@@ -496,7 +528,7 @@
 	</footer>
 
 	<!-- BACK HOME -->
-	<a href="#hero" id="link-topo">
+	<a href="#home" id="link-topo">
 		<i class="fas fa-arrow-up"></i>
 	</a>
 </body>

@@ -100,7 +100,7 @@ buttomGeral.forEach((item) => {
   })
 })
 
-// Professional
+//PROFESSIONAL
 
 let count = 1;
 document.getElementById("xp1").checked = true;
