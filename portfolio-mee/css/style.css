@@ -491,33 +491,33 @@ header .navegacao-primaria li a:hover::after {
   background-position: right;
 }
 
-.section-div div {
-  margin-top: 120px;
-  align-self: start;
+.section-div .main_hero {
+  margin-bottom: 150px;
   display: grid;
+  align-self: start;
   gap: 30px;
 }
 
-.section-div div h2:first-child {
+.section-div .main_hero h2:first-child {
   font-family: var(--font-1);
   font-weight: 600;
   color: var(--color-4);
 }
 
-.section-div div h2:nth-child(2) {
+.section-div .main_hero h2:nth-child(2) {
   font-family: var(--font-1);
   font-weight: 600;
   color: var(--color-5);
   text-shadow: 2px 2px 2px var(--color-1);
 }
 
-.section-div div p {
+.section-div .main_hero p {
   font-family: var(--font-1);
   font-weight: 200;
   color: var(--color-4);
 }
 
-.section-div div a {
+.section-div .main_hero a {
   justify-self: start;
   padding: 15px 40px;
   border-radius: 30px;
@@ -527,7 +527,7 @@ header .navegacao-primaria li a:hover::after {
   border: 1px solid transparent;
 }
 
-.section-div div a:hover {
+.section-div .main_hero a:hover {
   background-color: var(--color-1);
   color: var(--color-2);
   border: 1px solid transparent;
@@ -565,7 +565,7 @@ main .sobre::after {
   border-radius: 5px;
   grid-column: 1/-1;
   grid-row: 6;
-  margin: 7.5% auto;
+  margin: 0 auto;
 }
 
 .sobre img {
@@ -667,7 +667,7 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 5.5% auto;
+  margin: 0 auto;
 }
 
 .my_services ul {
@@ -765,7 +765,7 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 10% auto;
+  margin: 1% auto;
 }
 
 .projects ul {
@@ -944,14 +944,15 @@ main .sobre::after {
   width: 300px;
   height: 6px;
   border-radius: 5px;
-  margin: 13% auto;
+  margin: 4% auto;
 }
 
 .slider {
   width: 50rem;
   height: 20rem;
   overflow: hidden;
-  margin: 2rem auto;
+  margin: auto;
+  margin-top: 2rem;
 }
 
 .slider .professional_icons {
@@ -1128,7 +1129,7 @@ footer .sobre_titulo p {
   max-width: 900px;
 }
 
-.footer_sociais {
+.main_social {
   position: relative;
   display: flex;
   justify-content: center;
@@ -1138,24 +1139,29 @@ footer .sobre_titulo p {
   color: var(--color-4);
 }
 
-.footer_sociais li {
+.main_social li {
   background-color: var(--color-8);
   border-radius: 50%;
   border: 1px solid var(--color-9);
+  transition: .3s ease-in-out;
 }
 
-.footer_sociais li i {
+.main_social li i {
   padding: 30px;
   color: var(--color-4);
 }
 
-.footer_sociais li:hover {
-  transition: .3s ease-in-out;
-  cursor: pointer;
-  background-color: var(--color-9);
+.main_social li i:hover {
+  color: var(--color-9);
 }
 
-.footer_sociais::before {
+.main_social li:hover {
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  background-color: var(--color-4);
+}
+
+.footer_social::before {
   position: absolute;
   content: '';
   width: 200px;

@@ -47,6 +47,7 @@
 		<p>- Arrumar "Lista de Conhecimentos" em "services".</p> <br />
 		- Responsiveness: Terminar responsividade em todas as dimensões <br />
 		- Arrumar "escrevendoLetra" para remover e escrever outra frase, elas ficando em loop <br />
+		- Arrumar ".projects::after" quando clicado nas outras opções a barra inferior sobe, ela tem que ficar fixa <br />
 		<!-- 1st phrase: "Ricardo Martins", 2nd phrase: "25 years old and...", 3rd phrase: "Front-End Developer ▪︎ Vue.js | Javascript" -->
 		- Barra de rolagem da página personalizada<br />
 		- Logo: Pegar logo PNG (Milton Quântico) e alterar FavIcon <br />
@@ -116,12 +117,27 @@
 
 	<!-- HOME | HERO -->
 	<section id="hero" aria-label="seção home" class="section-div site-website">
-		<div>
-			<h2>Hi everyone. I'm</h2>
-			<h2 class="digitando">Front-End Developer ▪︎ Vue.js | Javascript</h2>
-			<p>In the middle of 2021, I decided to focus on Front-End and I have been improving. My goal is to embrace the
-				challenge and the knowledge that will come from this field.</p>
-			<a href="#about">About Me</a>
+		<div class="hero">
+			<div class="main_hero">
+				<h2>Hi everyone. I'm</h2>
+				<h2 class="digitando">Front-End Developer ▪︎ Vue.js | Javascript</h2>
+				<p>In the middle of 2021, I decided to focus on Front-End and I have been improving. My goal is to embrace the
+					challenge and the knowledge that will come from this field.</p>
+				<a href="#about">About Me</a>
+			</div>
+
+			<div class="hero_social">
+				<nav aria-label="navegação para redes sociais">
+					<ul class="main_social">
+						<li><a href="https://www.linkedin.com/in/riicard0/" target="_blank"><i
+									class="fa-brands fa-linkedin-in"></i></a>
+						</li>
+						<li><a href="https://www.instagram.com/ricarrdo_marttyns/" target="_blank"><i
+									class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="https://github.com/riicard0" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	</section>
 
@@ -374,7 +390,8 @@
 					<div class="slide_info">
 						<span>jun.2017 - mar.2018</span>
 						<h3>General Assistant - EMDUARTEX C S M P</h3>
-						<p>Responsible for providing support to the operator on machines: four-face, chopper, pendulum, multi-blade,
+						<p>Responsible for providing support to the operator on machines: four-face, chopper, pendulum,
+							multi-blade,
 							circular saw, etc.</p>
 					</div>
 				</div>
@@ -383,8 +400,10 @@
 					<div class="slide_info">
 						<span>set.2014 - ago.2015</span>
 						<h3>Administrative Assistant - Melhoramentos CMPC</h3>
-						<p>Responsible for providing full support to the department head, including making requests, labels, prints,
-							etc., as well as assisting, when necessary, the electricians and instrument technicians in the department.
+						<p>Responsible for providing full support to the department head, including making requests, labels,
+							prints,
+							etc., as well as assisting, when necessary, the electricians and instrument technicians in the
+							department.
 							(Outsourced by "Guarda Mirim de Suzano")</p>
 					</div>
 				</div>
@@ -513,7 +532,7 @@
 			</div>
 
 			<nav aria-label="navegação para redes sociais">
-				<ul class="footer_sociais">
+				<ul class="main_social footer_social">
 					<li><a href="https://www.linkedin.com/in/riicard0/" target="_blank"><i
 								class="fa-brands fa-linkedin-in"></i></a>
 					</li>
