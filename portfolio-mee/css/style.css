@@ -694,6 +694,11 @@ main .sobre::after {
 .my_services ul li i {
   font-size: 2.7rem;
   color: var(--color-5);
+  transition: .3s ease-in-out;
+}
+
+.my_services ul li:hover i {
+  color: var(--color-3);
 }
 
 .my_services ul li h3 {
@@ -701,11 +706,23 @@ main .sobre::after {
   font-size: 1.6rem;
   font-family: var(--font-1);
   font-weight: 500;
+  transition: .3s ease-in-out;
+}
+
+.my_services ul li:hover h3 {
+  color: var(--color-5);
 }
 
 .my_services ul li p {
   color: var(--color-3);
-  font-size: 1.1rem;
+  font-family: var(--font-3);
+  line-height: 1.2rem;
+  font-size: 1rem;
+  transition: .3s ease-in-out;
+}
+
+.my_services ul li:hover p {
+  color: var(--color-4);
 }
 
 .my_services li::before {
@@ -1114,19 +1131,20 @@ main .sobre::after {
 /* FOOTER */
 footer {
   background-color: var(--color-1);
-  padding: 70px;
+  padding: 8rem 0;
 }
 
 footer .sobre_titulo h1 {
   font-size: 3rem;
+  font-family: var(--font-2);
 }
 
 footer .sobre_titulo p {
-  margin: 30px auto 30px auto;
+  margin: 4rem auto 2rem auto;
   color: var(--color-2);
-  font-family: var(--font-1);
+  width: 42rem;
+  font-family: var(--font-3);
   font-size: 1rem;
-  max-width: 900px;
 }
 
 .main_social {
@@ -1161,21 +1179,21 @@ footer .sobre_titulo p {
   background-color: var(--color-4);
 }
 
-.footer_social::before {
+/* .footer_social::before {
   position: absolute;
   content: '';
   width: 200px;
   height: 5px;
   bottom: -40px;
   background-color: var(--color-9);
-}
+} */
 
 footer .footer_comercial {
   text-align: center;
-  color: var(--color-5);
-  margin: 90px auto;
+  color: var(--color-3);
+  margin: 5rem auto 0 auto;
   font-size: 1.5rem;
-  font-family: var(--font-5);
+  font-family: var(--font-4);
 }
 
 /* BACK HOME */
